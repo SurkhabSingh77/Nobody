@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surkhab Singh - Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-pulse {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+            <div class="mb-8 inline-block">
+                <svg class="w-20 h-20 text-cyan-400 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+            </div>
+            
+            <h1 class="text-7xl md:text-9xl font-black mb-6 leading-none">
+                <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+                    SURKHAB
+                </span>
+                <br>
+                <span class="text-white">SINGH</span>
+            </h1>
+            
+            <p class="text-2xl md:text-3xl text-gray-400 mb-4 font-light">
+                Cybersecurity Researcher & Ethical Hacker
+            </p>
+            
+            <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
+                B.Tech CS Student | Penetration Testing | IoT Security | Hardware Hacking
+            </p>
+
+            <div class="flex gap-6 justify-center items-center flex-wrap">
+                <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-bold text-lg hover:scale-105 transition-transform cursor-pointer">
+                    View Projects
+                </a>
+                <a href="mailto:surkhabsingh601@gmail.com" class="px-8 py-4 border-2 border-cyan-400 rounded-full font-bold text-lg hover:bg-cyan-400 hover:text-black transition-colors cursor-pointer inline-block">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="mt-16 animate-bounce">
+                <svg class="w-8 h-8 mx-auto text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-32 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black mb-16 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
+                    ABOUT ME
+                </span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-xl text-gray-300 leading-relaxed mb-6">
+                        Passionate cybersecurity enthusiast with hands-on experience in penetration testing and IoT security. I specialize in building custom hardware security tools and exploring wireless vulnerabilities ethically.
+                    </p>
+                    <p class="text-xl text-gray-300 leading-relaxed mb-6">
+                        Currently pursuing B.Tech in Computer Science at Punjab Technical University, I'm constantly experimenting with Kali Linux tools, GitHub security projects, and developing innovative hardware solutions for security research.
+                    </p>
+                    <div class="flex items-center gap-3 text-gray-400 mb-3">
+                        <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Jagraon, Punjab, India</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-400 mb-3">
+                        <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <a href="mailto:surkhabsingh601@gmail.com" class="hover:text-cyan-400 transition-colors">
+                            surkhabsingh601@gmail.com
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-400">
+                        <svg class="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <a href="https://github.com/SurkhabSingh77" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">
+                            github.com/SurkhabSingh77
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">Penetration Testing</h3>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">Python</h3>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">Kali Linux</h3>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">Network Security</h3>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">IoT Security</h3>
+                    </div>
+                    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition-all hover:scale-105">
+                        <svg class="w-8 h-8 text-cyan-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <h3 class="font-bold text-lg">ESP32 Development</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black mb-20 text-center">
+                <span class="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
+                    PROJECTS
+                </span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 hover:border-purple-500 transition-all duration-300 hover:scale-[1.02]">
+                    <svg class="w-8 h-8 text-purple-400 mb-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                    </svg>
+                    
+                    <h3 class="text-3xl font-black mb-2 group-hover:text-purple-400 transition-colors">
+                        M5Stick C Plus 2
+                    </h3>
+                    
+                    <p class="text-cyan-400 text-sm font-semibold mb-4">
+                        Bruce Firmware Pentest Device
+                    </p>
+                    
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Developed a portable penetration testing device using M5Stick C Plus 2 paired with Bruce firmware. Capable of WiFi attacks, BLE scanning, and network reconnaissance in a compact form factor.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">WiFi Testing</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">BLE</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Network Analysis</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">ESP32</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 hover:border-purple-500 transition-all duration-300 hover:scale-[1.02]">
+                    <svg class="w-8 h-8 text-purple-400 mb-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    
+                    <h3 class="text-3xl font-black mb-2 group-hover:text-purple-400 transition-colors">
+                        LilyGO T-Watch S3
+                    </h3>
+                    
+                    <p class="text-cyan-400 text-sm font-semibold mb-4">
+                        Wearable Security Testing Platform
+                    </p>
+                    
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Programmed smartwatch with Bruce firmware for discrete security testing. Performs WiFi vulnerability assessments, deauth attacks, and wireless network analysis from a wearable device.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Wearable Tech</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">WiFi Security</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Bruce Firmware</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">ESP32</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 hover:border-purple-500 transition-all duration-300 hover:scale-[1.02]">
+                    <svg class="w-8 h-8 text-purple-400 mb-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                    
+                    <h3 class="text-3xl font-black mb-2 group-hover:text-purple-400 transition-colors">
+                        ESP32 Security Research Tool
+                    </h3>
+                    
+                    <p class="text-cyan-400 text-sm font-semibold mb-4">
+                        IoT Wireless Testing Device
+                    </p>
+                    
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Designed and built IoT device for ethical wireless security testing. Conducted WiFi vulnerability assessments and network security research following responsible disclosure practices.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">IoT Security</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">WiFi Analysis</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Ethical Hacking</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">ESP32</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 hover:border-purple-500 transition-all duration-300 hover:scale-[1.02]">
+                    <svg class="w-8 h-8 text-purple-400 mb-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                    </svg>
+                    
+                    <h3 class="text-3xl font-black mb-2 group-hover:text-purple-400 transition-colors">
+                        Offline AI Assistant
+                    </h3>
+                    
+                    <p class="text-cyan-400 text-sm font-semibold mb-4">
+                        Python & LM Studio Integration
+                    </p>
+                    
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Built a fully offline AI assistant using Python and LM Studio. Implemented local language model processing for privacy-focused AI interactions without internet dependency.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Python</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">LM Studio</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">AI/ML</span>
+                        <span class="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-gray-300">Privacy-First</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-32 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black mb-16 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
+                    EXPERIENCE
+                </span>
+            </h2>
+
+            <div class="space-y-8">
+                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-cyan-400 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-2xl font-black text-cyan-400">Intern - Sortiq Solutions</h3>
+                        <span class="text-gray-500 font-mono">07/2025 - 08/2025</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Mohali, Punjab, India</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 mt-1">▹</span>
+                            <span>Analyzed complex problems and collaborated with cross-functional teams to develop innovative solutions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 mt-1">▹</span>
+                            <span>Participated in technical workshops and project presentations to enhance knowledge and skills</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-8 hover:border-purple-400 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-2xl font-black text-purple-400">Python with AI Internship</h3>
+                        <span class="text-gray-500 font-mono">45 Days</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">▹</span>
+                            <span>Mastered Python automation techniques and scripting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">▹</span>
+                            <span>Learned fundamentals of AI concepts and machine learning</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">▹</span>
+                            <span>Developed multiple mini-projects applying AI/ML principles</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-cyan-500 to-purple-500"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl md:text-7xl font-black mb-8">
+                <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+                    LET'S COLLABORATE
+                </span>
+            </h2>
+            
+            <p class="text-2xl text-gray-400 mb-12">
+                Interested in cybersecurity research, penetration testing, or IoT security projects?
+            </p>
+            
+            <div class="flex gap-6 justify-center flex-wrap">
+                <a href="mailto:surkhabsingh601@gmail.com" class="px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-bold text-xl hover:scale-105 transition-transform inline-flex items-center gap-3 cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    Get In Touch
+                </a>
+                <a href="https://github.com/SurkhabSingh77" target="_blank" rel="noopener noreferrer" class="px-10 py-5 border-2 border-purple-400 rounded-full font-bold text-xl hover:bg-purple-400 hover:text-black transition-colors inline-flex items-center gap-3 cursor-pointer">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-950 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500">
+                © 2025 Surkhab Singh. Building the future of cybersecurity, one device at a time.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll function
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
